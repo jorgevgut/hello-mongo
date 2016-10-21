@@ -5,7 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongo = require('mongodb').MongoClient;
-var mongoUrl = 'mongodb://ctu_mongo_rw:sJeDsRfYfFtSh22@10.64.5.153:7442,10.64.5.154:7442,10.64.5.155:7442/ctu_mongo?replicaSet=mongo7442';
+var mongoUrl = 'mongodb://jvillalo_rw:2Q9BsYe81DxC2G0@10.64.5.168:7482,10.64.5.169:7482,10.64.5.170:7482/jvillalo?replicaSet=mongo7482';
 var mdb = (callback) => {
     mongo.connect(mongoUrl, (err, db) => {
         callback(err, db);
